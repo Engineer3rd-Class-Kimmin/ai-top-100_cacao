@@ -1,0 +1,23 @@
+{
+  "reviewed_on": "2026-11-03",
+  "source": "Codex read_thread, paginated to hasMore=false",
+  "current_portfolio_request_excluded": true,
+  "threads": [
+    {
+      "title": "범용 AI Agent Harness 구축",
+      "pages": 18,
+      "completed_turns": 174,
+      "earliest_turn_utc": "2026-10-01T06:08:30.000Z",
+      "latest_completed_turn_utc": "2026-10-31T13:41:58.000Z",
+      "raw_content_published": false
+    },
+    {
+      "title": "구현·검증: Qwen3.8 27B 액션 API",
+      "pages": 4,
+      "completed_turns": 33,
+      "earliest_turn_utc": "2026-10-31T02:21:15.000Z",
+      "latest_completed_turn_utc": "2026-10-31T13:47:50.000Z",
+      "raw_content_published": false
+    }
+  ]
+}

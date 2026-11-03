@@ -1,0 +1,158 @@
+{
+  "publication_review_date": "2026-11-03",
+  "event_window_kst": {
+    "date": "2026-10-31",
+    "start": "10:00",
+    "end": "15:00"
+  },
+  "not_official_score": true,
+  "interview": {
+    "dialogue_verified_contacts": 10,
+    "last_recorded_percentages": [
+      49,
+      38,
+      37,
+      44,
+      46,
+      33,
+      49,
+      60,
+      55,
+      47
+    ],
+    "arithmetic_mean_percent": 45.8,
+    "last_status_snapshot_kst": "2026-10-31T14:03:00+09:00",
+    "official_question_count_at_that_snapshot": 139
+  },
+  "public_fixture": {
+    "pass_cases": 15,
+    "samples": 43,
+    "p95_ms": 1729.692,
+    "median_ms": 134.948,
+    "average_chars": 145.95,
+    "max_chars": 281,
+    "average_bubbles_per_case": 2.867,
+    "clean_fixture_reset": false,
+    "production_customer_authentication": false,
+    "limitations": [
+      "Fixed public-test account/order contexts; production Kakao-to-member authentication is not proven.",
+      "Existing action receipts were reused; fixtures were not reset for a clean first submission.",
+      "Latest per-case attempts are combined across pre-patch and post-patch runs, not a fresh full-suite run on one build.",
+      "Latency ends at successful Kakao callback completion, not device display; official grading may differ.",
+      "Y-07-b actual newly attached audio was decoded. L-11 independent image recognition was not tested."
+    ],
+    "reviewed_at": "2026-10-31T04:40:42.799143+00:00"
+  },
+  "judge_mode_kakao_sample": {
+    "verified_at": "2026-10-31T05:25:44.141490+00:00",
+    "successful_callbacks": 7,
+    "customer_samples": 6,
+    "p95_ms": 2998.02,
+    "median_ms": 106.196,
+    "max_chars": 269,
+    "all_single_bubble": true,
+    "actual_kakao_photo_confirmed": true,
+    "photo_model_seconds": 2.859,
+    "authenticated_context_observed": false,
+    "account_action_calls": 0
+  },
+  "later_contract_sample": {
+    "completed_at": "2026-10-31T05:43:43.191571+00:00",
+    "regression_passed": 252,
+    "actual_gateway_callbacks": 3,
+    "actual_gateway_actions": 0,
+    "actual_gateway_format_verified": true,
+    "actual_skill_http_ingress_verified": false,
+    "official_aitop_tc_transport_verified": false,
+    "p95_this_three_message_sample_ms": 5500.739
+  },
+  "runtime_knowledge": {
+    "public_confirmed_entries": 174,
+    "bundle_sha256": "aea47ed75a2140cbdf63656d5c0cbfc5ff82e821877684ef50b0d9eeef560043",
+    "source_references": 174,
+    "conditions": 25,
+    "exceptions": 7
+  },
+  "optimization": {
+    "mock_api_calls_before": 53,
+    "mock_api_calls_after": 38,
+    "mock_post_calls_unchanged": 12,
+    "stt_same_audio_warm_worker": [
+      {
+        "beams": 3,
+        "seconds": 10.937,
+        "intent_keywords_preserved": true
+      },
+      {
+        "beams": 1,
+        "seconds": 5.665,
+        "intent_keywords_preserved": true
+      }
+    ],
+    "word_error_rate_parity_verified": false
+  },
+  "edge_checks": {
+    "transport": "mock",
+    "results": [
+      {
+        "check": "negated_reship_consent",
+        "status": "PASS",
+        "live_api": false
+      },
+      {
+        "check": "expired_compensation_promo",
+        "status": "PASS",
+        "live_api": false
+      },
+      {
+        "check": "refund_success_then_handoff_error",
+        "status": "PASS",
+        "live_api": false
+      },
+      {
+        "check": "unconfigured_image_adapter_fails_closed",
+        "status": "PASS",
+        "live_api": false
+      },
+      {
+        "check": "weather_offers_unimplemented_refund",
+        "status": "PASS",
+        "live_api": false
+      },
+      {
+        "check": "public_inquiry_after_account_workflow",
+        "status": "PASS",
+        "live_api": false
+      },
+      {
+        "check": "unverified_login_claim_guard",
+        "status": "PASS",
+        "live_api": false
+      }
+    ]
+  },
+  "final_cleanup": {
+    "started_at": "2026-10-31T14:50:29+09:00",
+    "completed_at": "2026-10-31T05:54:39.757048+00:00",
+    "removed_source_files": 13,
+    "removed_orphan_bytecode": 11,
+    "rollback_archive_verified": true,
+    "regression_passed": 245,
+    "workflow_edge_checks_passed": 7,
+    "gateway_ready": true,
+    "live_end_to_end_after_cleanup": false,
+    "unresolved": "Official authenticated consultation/TC transport remains unverified; no authentication bypass was added."
+  },
+  "original_junit": {
+    "tests": "245",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0"
+  },
+  "limitations": [
+    "No official judging outcome is claimed.",
+    "Fixed-context practice is not authenticated dynamic production E2E.",
+    "No original conversations, documents, media, member data or receipts are published.",
+    "Metrics are historical artifacts, not new external API executions."
+  ]
+}
